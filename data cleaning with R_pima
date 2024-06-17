@@ -64,3 +64,7 @@ table(pima$Glucose)
 [1] 5
 > mean(pima$Glucose,na.rm=TRUE)
 [1] 121.6868
+
+pima$BMI[pima$BMI == 0] <- NA
+pima$BloodPressure[pima$BloodPressure == 0] <- NA
+pima$SkinThickness[pima$SkinThickness == 0] <- NA
