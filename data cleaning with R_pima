@@ -68,3 +68,9 @@ table(pima$Glucose)
 pima$BMI[pima$BMI == 0] <- NA
 pima$BloodPressure[pima$BloodPressure == 0] <- NA
 pima$SkinThickness[pima$SkinThickness == 0] <- NA
+
+#validating the NA values above
+table(pima$BMI)
+table(pima$BloodPressure)
+table(pima$SkinThickness)
+
